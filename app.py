@@ -30,7 +30,7 @@ def hello_world():
     allTodo = Todo.query.all()
     return render_template('index.html', allTodo=allTodo)
 
-@app.route("/about", methods=['GET', 'POST'])
+@app.route("/about")
 def about():
     return render_template('about.html')
 
